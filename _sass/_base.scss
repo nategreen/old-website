@@ -225,8 +225,8 @@ li {
 .card {
   background: $card-color;
   padding: 1.5rem;
-  margin-left: 0;
-  margin-right: 0;
+  // margin-left: 0;
+  // margin-right: 0;
   border-bottom: 1px solid shade($card-color, 10%);
   border-left: 1px solid shade($card-color, 5%);
   border-right: 1px solid shade($card-color, 5%);
@@ -244,6 +244,10 @@ li {
   }
     
   @include medium-shadow;
+}
+
+li.card {
+    margin-left: 0;
 }
 
 /**
