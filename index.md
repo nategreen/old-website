@@ -16,7 +16,7 @@ As a project for my Master's coursework, I started to design a portfolio site fo
 
 {% unless site.posts == empty %}
 
-#### Recent posts on my blog:
+#### Recent posts on [my blog](/blog):
 
 {% for post in site.posts %}
 - [{{post.title}}]({{post.url}})
