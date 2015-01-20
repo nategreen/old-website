@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -53,7 +53,7 @@ table {
  * Basic styling
  */
 
-body {
+html {
   font-family:
     Libertad,
     Source Sans Pro,
@@ -63,6 +63,14 @@ body {
   padding: 1rem;
   color: $text-color;
   background-color: $background-color;
+
+  @include media-query($tablet) {
+    font-size: 16px;
+  }
+
+  @include media-query($laptop) {
+    font-size: 20px;
+  }
 }
 
 // add spacing above each element that is preceded by another element
@@ -200,6 +208,15 @@ a.button {
     color: shade($button-color, 25%);
     border-color: shade($button-color, 25%);
   }
+}
+
+/**
+ * Lists
+ */
+
+li {
+    list-style-type: disc;
+    margin-left: 1rem;
 }
 
 /**

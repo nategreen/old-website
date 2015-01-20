@@ -28,11 +28,11 @@ $header-color: $black;
 $button-color: $marsala;
 $card-color: $off-white;
 
-// Width of the content area
-$content-width:    800px;
+// Breakpoints
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$tablet: 600px;
+$laptop: 1024px;
+$desktop: 1600px;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -55,5 +55,6 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base"
+        "base",
+        "layout"
 ;
