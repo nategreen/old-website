@@ -3,23 +3,31 @@
 ---
 @charset "utf-8";
 
+// Typography Variables
 
-
-// Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+// Color Variables
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$blue: hsla(200, 90, 40, 1.0);
+$dark-grey: hsla(0, 0, 45, 1.0);
+$light-grey: hsla(0, 0, 95, 1.0);
+$black: hsla(0, 0, 20, 1.0);
+$marsala: hsla(350, 65, 40, 1.0);
+$white: hsla(0, 0, 100, 1.0);
+$off-white: hsla(0, 0, 99, 1.0);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Theme Color Variables
+
+$background-color: $light-grey;
+$text-color: $dark-grey;
+$link-color: $blue;
+$header-color: $black;
+$button-color: $marsala;
+$card-color: $off-white;
 
 // Width of the content area
 $content-width:    800px;
@@ -46,7 +54,5 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+        "base"
 ;
