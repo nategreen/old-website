@@ -1,19 +1,18 @@
-// "Container" elements width
-
-
-
 body {
   
-  & > header,
-  & > footer,
-  & > section,
-  & > article,
-  & > ul,
-  & > div {
+  > header,
+  > footer,
+  > section,
+  > article,
+  > ul,
+  > div {
     width: 100%;
 
     @include media-query($tablet) {
-      
+      width: $tablet;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
+
