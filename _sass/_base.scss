@@ -52,14 +52,180 @@ table {
 /**
  * Basic styling
  */
+
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+  font-family:
+    Libertad,
+    Source Sans Pro,
+    Calibri,
+    sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// add spacing above each element that is preceded by another element
+
+body * + * {
+  margin-top: 1em;
+}
+
+/**
+ * Headers
+ */
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  
+  color: $header-color;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-style: normal;
+
+  color: $header-color;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  font-style: italic;
+
+  color: $header-color;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+
+  color: $header-color;
+
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+
+  color: $header-color;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+
+  color: $header-color;
+}
+
+/**
+ * Block-level Text Elements
+ */
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  
+  color: $text-color;
+}
+
+blockquote {
+  $color: tint($text-color, 50%);
+  
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: .5rem 1rem;
+  border-left: .1rem solid $color;
+  
+  color: $color;
+}
+
+/**
+ * Links
+ */
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: shade($link-color, 20%);
+    text-decoration: underline;
+  }
+}
+
+a.button {
+  display: inline-block;
+  
+  font-size: 1rem;
+  line-height: 1rem;
+  
+  color: $button-color;
+  
+  border: 1px solid $button-color;
+  border-radius: .25rem;
+  
+  margin-right: 1rem;
+  padding: .75rem 1rem;
+  
+  &:nth-last-of-type(1) {
+    margin-right: 0;
+  }
+  
+  &:hover {
+    text-decoration: none;
+    
+    color: tint($button-color, 15%);
+    border-color: tint($button-color, 15%);
+    background-color: transparentize($button-color, 0.95);
+  }
+  
+  &:active {
+    color: shade($button-color, 25%);
+    border-color: shade($button-color, 25%);
+  }
+}
+
+/**
+ * Cards
+ */
+
+.card {
+  background: $card-color;
+  padding: 1.5rem;
+  border-bottom: 1px solid shade($card-color, 10%);
+  border-left: 1px solid shade($card-color, 5%);
+  border-right: 1px solid shade($card-color, 5%);
+  border-top: 1px solid tint($card-color, 75%);
+  border-radius: .125rem;
+  
+  list-style-type: none;
+  
+  * + & {
+    margin-top: 2rem;
+  }
+  
+  &:nth-of-type(N + 2) {
+    margin-top: 1rem;
+  }
+    
+  @include medium-shadow;
 }
 
 /**
