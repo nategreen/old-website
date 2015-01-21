@@ -1,16 +1,12 @@
 #masthead {
   position: relative;
   padding: 1rem;
-  height: 50rem;
-  max-height: 25vw;
   background-image: url(/images/tools.svg);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
   h1 {
-    position: absolute;
-    top: calc(66% - 1em);
-
     color: $white;
     text-shadow: 0 .25rem .25rem $marsala;
   }
