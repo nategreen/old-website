@@ -9,8 +9,8 @@ body {
       padding-right: 1rem;
 
       @include media-query($tablet) {
-        padding-left: calc(50% - 20rem);
-        padding-right: calc(50% - 20rem);
+        padding-left: calc(50% - #{$tablet / 2});
+        padding-right: calc(50% - #{$tablet / 2});
       }
     }
   }
