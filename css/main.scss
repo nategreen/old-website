@@ -31,9 +31,9 @@ $card-color: $off-white;
 
 // Breakpoints
 
-$tablet: 600px;
-$laptop: 1024px;
-$desktop: 1600px;
+$tablet: 40rem;
+$laptop: 80rem;
+$desktop: 120rem;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
