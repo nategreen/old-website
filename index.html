@@ -1,0 +1,30 @@
+---
+layout: default
+
+title: 'Nate Green: UX \& Visual Designer'
+---
+
+    <section id="masthead">
+      <h1>Principled &amp; user-centered with a keen eye for style</h1>
+    </section>
+
+    <section id="summary">
+      <p>This is going to be my portfolio site, soon. For now, I've started <a href="{{ site.base_url }}/blog">a blog</a> where you can see my progress and some of the things I'm working on in my UX design Master's degree program at Kent State. I built this site with my bare hands, so to speak, with help from Jekyll, Github Pages, and others. I'm still working on it, adding features and style as I go, so you may see some mistakes here and there. Feel free to <a href="mailto:{{ site.email }}">email me</a> about anything you encounter.</p>
+      <!-- <a href="/portfolio" class="cta">Portfolio</a> -->
+      <!-- <a href="/Nate-Green-Resume.pdf" class="cta">Résumé</a> -->
+    </section>
+    
+    <!-- If there are blog posts... -->
+    {% if site.posts != empty %}
+      <section id="recent-posts">
+      <h2>Recent Blog Posts</h2>
+        <!-- For the 3 most recent posts -->
+        {% for post in site.posts limit:3 %}
+          <div class="card">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">Read more ></a>
+          </div>
+        {% endfor %}
+      </section>
+    {% endif %}
