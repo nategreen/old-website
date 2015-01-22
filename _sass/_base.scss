@@ -63,11 +63,11 @@ html {
   background-color: $background-color;
 
   @include media-query($tablet) {
-    font-size: 110%;
+    font-size: 1.125em;
   }
 
   @include media-query($laptop) {
-    font-size: 120%;
+    font-size: 1.25em;
   }
 }
 
