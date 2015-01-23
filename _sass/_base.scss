@@ -22,6 +22,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -78,7 +79,7 @@ body * + * {
 }
 
 /**
- * Headers
+ * Headings
  */
 
 h1 {
@@ -87,7 +88,7 @@ h1 {
   font-weight: 700;
   font-style: normal;
   
-  color: $header-color;
+  color: $heading-color;
 }
 
 h2 {
@@ -96,7 +97,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
 
-  color: $header-color;
+  color: $heading-color;
 }
 
 h3 {
@@ -105,7 +106,7 @@ h3 {
   font-weight: 400;
   font-style: italic;
 
-  color: $header-color;
+  color: $heading-color;
 }
 
 h4 {
@@ -114,7 +115,7 @@ h4 {
   font-weight: 700;
   font-style: normal;
 
-  color: $header-color;
+  color: $heading-color;
 
 }
 
@@ -124,7 +125,7 @@ h5 {
   font-weight: 400;
   font-style: italic;
 
-  color: $header-color;
+  color: $heading-color;
 }
 
 h6 {
@@ -133,7 +134,7 @@ h6 {
   font-weight: 700;
   font-style: normal;
 
-  color: $header-color;
+  color: $heading-color;
 }
 
 /**

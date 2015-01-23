@@ -1,23 +1,41 @@
-body {
-  > section,
-  > header,
-  > footer {
-    width: 100%;
+/**
+ * Page Sizing
+ */
 
-    > * {
-      padding-left: 1rem;
-      padding-right: 1rem;
+body > * {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-      @include media-query($tablet) {
-        padding-left: calc(50% - #{$tablet / 2});
-        padding-right: calc(50% - #{$tablet / 2});
-      }
-    }
+  @include media-query($tablet) {
+    padding-left: 25%; // fallback
+    padding-right: 25%; // fallback
+    padding-left: calc(50% - #{$tablet / 2});
+    padding-right: calc(50% - #{$tablet / 2});
   }
 }
 
+
+/**
+ * Site Header
+ */
+
 body > header {
-  padding: 1rem 0;
-  border-bottom: .125rem solid lighten($text-color, 25%);
+  position: fixed;
+  top: 0;
+  // height: 3rem;
+  width: 100%;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: $site-header-color;
 }
 
+body > header + * > *:first-child {
+  padding-top: 6rem;
+}
+
+body > header + * {
+  margin-top: 0;
+}
