@@ -15,7 +15,7 @@ layout: default
 		<h1>Keep Reading</h1>
 		<ul>
 		{% if page.next %}
-			<li>
+			<li class="card">
 				<h2>
 					<a href="{{ page.next.url }}">Next post: {{ page.next.title }}</a>
 				</h2>
@@ -24,7 +24,7 @@ layout: default
 			</li>
 		{% endif %}
 		{% if page.previous %}
-			<li>
+			<li class="card">
 				<h2>
 					<a href="{{ page.previous.url }}">Previous post: {{ page.previous.title }}</a>
 				</h2>
