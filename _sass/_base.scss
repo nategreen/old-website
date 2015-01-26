@@ -85,6 +85,14 @@ body * + * {
   margin-top: 1em;
 }
 
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bolder;
+}
+
 /**
  * Headings
  */
