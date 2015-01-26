@@ -4,7 +4,7 @@
       <button name="Menu">Menu</button>
       <h3>Menu</h3>
       <ul>
-        {% for page in site.pages %}
+        {% for page in site.pages reversed %}
           {% if page.layout != null %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
           {% endif %}

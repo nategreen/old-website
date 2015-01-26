@@ -1,13 +1,11 @@
 ---
-layout: default
-
-title: 'Blog - Nate Green: UX & Visual Designer'
+layout: page
+title: 'Blog'
 ---
 
-  <h1>UX Design Blog</h1>
   <ul>
     {% for post in site.posts %}
-      <li>
+      <li class="card">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>

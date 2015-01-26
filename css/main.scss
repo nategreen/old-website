@@ -51,6 +51,16 @@ $desktop: 120em;
     }
 }
 
+@mixin clearfloat() {
+  &::after {
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
 // Mixins for shadows
 
 @mixin medium-shadow {
