@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -177,7 +177,7 @@ a {
   }
 }
 
-a.button {
+a.button, button {
   display: inline-block;
   
   font-size: 1rem;
@@ -189,7 +189,7 @@ a.button {
   border-radius: .25rem;
   
   margin-right: 1rem;
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
   
   &:nth-last-of-type(1) {
     margin-right: 0;
