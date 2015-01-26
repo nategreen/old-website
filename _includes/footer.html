@@ -1,12 +1,24 @@
 <footer>
-  <h2>About Nate Green</h2>
-  <p class="text">I'm a UX designer with a visual design background. I bring visual design principles together with user-centered design and research to create beautiful, useful things.</p>
-  <ul>
-    <li>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    </li>
-    <li>
-      <a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a>
-    </li>
-  </ul>
+  <section class="about">
+    <img src="" alt="" />
+    <h1>About Nate Green</h1>
+    <p>I'm a UX designer with a visual design background. I work at MRI Software in Northeast Ohio, designing interfaces for cutting-edge real estate management software.</p>
+  </section>
+  <section class="h-card">
+    <span class="p-name">Nate Green</span>
+    <span class="p-job-title">UX &amp; Visual Designer</span>
+    <a href="mailto:heynategreen@gmail.com" class="u-email">heynategreen@gmail.com</a>
+    <span class="p-tel">(330) 235-3306</span>
+  </section>
+  {% if site.pages %}
+    <nav>
+      <ul>
+        {% for page in site.pages %}
+          {% if page.layout != null %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
 </footer>

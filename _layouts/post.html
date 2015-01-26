@@ -10,3 +10,28 @@ layout: default
       {{ content }}
     </section>
   </article>
+{% if page.next or page.previous %}
+	<aside class="post-nav">
+		<h1>Keep Reading</h1>
+		<ul>
+		{% if page.next %}
+			<li>
+				<h2>
+					<a href="{{ page.next.url }}">Next post: {{ page.next.title }}</a>
+				</h2>
+				{{ page.next.excerpt }}
+				<a href="{{ page.next.url }}">Read more ></a>
+			</li>
+		{% endif %}
+		{% if page.previous %}
+			<li>
+				<h2>
+					<a href="{{ page.previous.url }}">Previous post: {{ page.previous.title }}</a>
+				</h2>
+				{{ page.previous.excerpt }}
+				<a href="{{ page.previous.url }}">Read more ></a>
+			</li>
+		{% endif %}
+		</ul>
+	</aside>
+{% endif %}

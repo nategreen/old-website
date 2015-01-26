@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ body-class }}">
+  <body class="{{ if page.body-class }}">
     {% include header.html %}
-    <section>
-      {{ content }}
-    <section>
+    {{ content }}
     {% include footer.html %}
   </body>
 </html>

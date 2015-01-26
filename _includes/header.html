@@ -1,5 +1,21 @@
-<header>
-
-    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+<header class="">
+  {% if site.pages %}
+    <nav>
+      <button name="Menu">Menu</button>
+      <h3>Menu</h3>
+      <ul>
+        {% for page in site.pages reversed %}
+          {% if page.layout != null %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+  <section class="h-card">
+    <a href="/" class="p-name">Nate Green</a>
+    <span class="p-job-title">UX &amp; Visual Designer</span>
+    <a href="mailto:heynategreen@gmail.com" class="u-email">heynategreen@gmail.com</a>
+    <span class="p-tel">(330) 235-3306</span>
+  </section>
 </header>

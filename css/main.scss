@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 @charset "utf-8";
 
@@ -11,29 +12,31 @@ $base-line-height: 1.5;
 
 // Color Variables
 
-$blue: hsla(200, 90, 40, 1.0);
-$dark-grey: hsla(0, 0, 45, 1.0);
-$light-grey: hsla(0, 0, 95, 1.0);
-$black: hsla(0, 0, 20, 1.0);
-$marsala: hsla(1, 30, 45, 1.0);
-$white: hsla(0, 0, 100, 1.0);
-$off-white: hsla(0, 0, 99, 1.0);
-$teal: hsla(162, 46, 65, 1.0);
+$blue: hsla(200, 90%, 40%, 1.0);
+$dark-grey: hsla(0, 0%, 45%, 1.0);
+$light-grey: hsla(0, 0%, 95%, 1.0);
+$black: hsla(0, 0%, 20%, 1.0);
+$marsala: hsla(1, 30%, 45%, 1.0);
+$white: hsla(0, 0%, 100%, 1.0);
+$off-white: hsla(0, 0%, 99%, 1.0);
+$teal: hsla(162, 46%, 65%, 1.0);
+$nate-green: hsla(145, 50%, 25%, 1.0);
 
 // Theme Color Variables
 
 $background-color: $light-grey;
 $text-color: $dark-grey;
 $link-color: $blue;
-$header-color: $black;
+$heading-color: $black;
 $button-color: $marsala;
 $card-color: $off-white;
+$site-header-color: transparentize($nate-green, 0.125);
 
 // Breakpoints
 
-$tablet: 600px;
-$laptop: 1024px;
-$desktop: 1600px;
+$tablet: 40em;
+$laptop: 80em;
+$desktop: 120em;
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -48,6 +51,16 @@ $desktop: 1600px;
     }
 }
 
+@mixin clearfloat() {
+  &::after {
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
 // Mixins for shadows
 
 @mixin medium-shadow {
@@ -58,5 +71,5 @@ $desktop: 1600px;
 @import
         "base",
         "layout",
-        "sections"
+        "home-page"
 ;
