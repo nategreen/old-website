@@ -19,8 +19,8 @@ layout: default
 				<h2>
 					<a href="{{ page.next.url }}">Next post: {{ page.next.title }}</a>
 				</h2>
-				{{ page.next.excerpt }}
-				<a href="{{ page.next.url }}">Read more ></a>
+				{{ page.next.excerpt | markdownify }}
+				<p><a href="{{ page.next.url }}">Read more ></a></p>
 			</li>
 		{% endif %}
 		{% if page.previous %}
@@ -28,8 +28,8 @@ layout: default
 				<h2>
 					<a href="{{ page.previous.url }}">Previous post: {{ page.previous.title }}</a>
 				</h2>
-				{{ page.previous.excerpt }}
-				<a href="{{ page.previous.url }}">Read more ></a>
+				{{ page.previous.excerpt | markdownify }}
+				<p><a href="{{ page.previous.url }}">Read more ></a></p>
 			</li>
 		{% endif %}
 		</ul>
