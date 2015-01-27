@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 500">
-<style>
+<style> 
 	svg {
-	background-color: #7DCFB6;
+	background-color: #0A84C1;
 	}
 	.solid {
-	fill: #7DCFB6;
+	fill: #0A84C1;
 	}
 	.line, .reverse-line {
 	fill: none;
 	}
 	.reverse-line {
-	stroke: #7DCFB6;
+	stroke: #0A84C1;
 	}
 	.line, .solid, .reverse-line {
 	stroke-width: 1px;
 	}
 	.line, .solid {
-	stroke: #955251;
+	stroke: #7CCEB6;
 	}
 	.reverse-solid {
-	fill: #955251;
+	fill: #7CCEB6;
 	}
 
 </style>
