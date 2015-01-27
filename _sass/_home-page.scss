@@ -2,13 +2,15 @@
   position: relative;
   z-index: -1;
   height: 33.333vh;
-  min-height: 12rem;
+  min-height: 50vh;
+  padding-top: 25vh;
   padding-bottom: 2rem;
   background-color: $teal;
   background-image: url(/images/tools.svg);
-  background-position: center 50%;
+  background-position: center calc(-10vw + 2vh);
   background-repeat: no-repeat;
   background-size: 150%;
+  background-attachment: fixed;
 
   h1 {
     position: absolute;
