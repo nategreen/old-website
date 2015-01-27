@@ -23,6 +23,7 @@ time, mark, audio, video, button {
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+    text-rendering: optimizeLegibility;
     transition:
       height .5s cubic-bezier(0,1,1,1),
       width .5s cubic-bezier(0,1,1,1),
