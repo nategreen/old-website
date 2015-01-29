@@ -1,9 +1,3 @@
 # [nategreen.github.io](http://nategreen.github.io)
 
-My portfolio and blog site. Built with Jekyll and friends.
-
-## About Nate Green
-
-I'm a user experience designer with a background in visual design. I've learned enough about front-end code that I can hack away at my own site, but not much more than that.
-
-Feel free to poke around my code. It's probably kind of messy...remember, I'm a designer. Don't judge me too harshly.
+I'm a user experience designer with a background in visual design. This is my portfolio and blog site. It's a work in progress, I'm trying to continually make commits that improve the site's style and features, but keep the site up and running without breaking anything. (So if you see something broken, open an issue or [email me](mailto:heynategreen@gmail.com).)
