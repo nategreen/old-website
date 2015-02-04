@@ -65,6 +65,18 @@ $desktop: 120em;
   box-shadow: 0 .25rem .5rem transparentize($black, 0.75);
 }
 
+@mixin large-shadow {
+  box-shadow: 0 .5rem 1rem transparentize($black, 0.65);
+}
+
+@mixin medium-inset-shadow {
+  box-shadow: 0 .25rem .5rem transparentize($black, 0.75) inset;
+}
+
+@mixin large-inset-shadow {
+  box-shadow: 0 .5rem 1rem transparentize($black, 0.65) inset;
+}
+
 // Susy setup
 
 $susy: (

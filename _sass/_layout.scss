@@ -35,6 +35,8 @@ body > header {
   background-color: $site-header-color;
   color: $white;
 
+  @include large-shadow;
+
   a {
     color: inherit;
   }
@@ -241,12 +243,7 @@ body > footer {
       @include span(1 of 3);
 
       border: 1 / 2 * 1rem solid $light-grey;
-
       @include medium-shadow;
-    }
-
-    img ~ * {
-      @include span(2 of 3 last);
     }
   }
 
