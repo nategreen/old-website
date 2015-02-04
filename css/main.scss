@@ -84,6 +84,31 @@ $susy: (
   gutters: 1/8
   );
 
+// Font Loader
+
+html.wf-loading {
+  body {
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 1 !important;
+    
+    background-image: url('/images/spinner.gif');
+    background-position: center;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-color: $background-color;
+  }
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "susy",
