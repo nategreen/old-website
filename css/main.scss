@@ -86,7 +86,9 @@ $susy: (
 
 // Font Loader
 
-html.wf-loading {
+html.wf-loading,
+html.wf-libertad-n4-loading,  // When either of these fonts are still loading 
+html.wf-libertad-b4-loading { // keep the spinner running
   body {
     opacity: 0;
   }
@@ -98,6 +100,7 @@ html.wf-loading {
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 100;
 
     opacity: 1 !important;
     
