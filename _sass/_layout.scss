@@ -220,3 +220,64 @@ body > header + * > *:first-child {
 body > header + * {
   margin-top: 0;
 }
+
+body > footer {
+  background-color: $dark-grey;
+  color: $light-grey;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include container;
+
+  section.about {
+    @include span(3 of 3);
+
+    h1 {
+      margin-top: 0;
+    }
+
+    img {
+      @include span(1 of 3);
+
+      border: 1 / 2 * 1rem solid $light-grey;
+
+      @include medium-shadow;
+    }
+
+    img ~ * {
+      @include span(2 of 3 last);
+    }
+  }
+
+  p {
+    color: $light-grey;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $light-grey;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      opacity: .65;
+    }
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+
+    &:nth-child(n+2)::before {
+      content: (" | ");
+    }
+  }
+}

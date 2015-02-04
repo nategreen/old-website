@@ -65,9 +65,17 @@ $desktop: 120em;
   box-shadow: 0 .25rem .5rem transparentize($black, 0.75);
 }
 
+// Susy setup
+
+$susy: (
+  columns: 3,
+  gutters: 1/8
+  );
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "home-page"
+  "susy",
+  "base",
+  "layout",
+  "home-page"
 ;
