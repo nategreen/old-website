@@ -89,22 +89,22 @@ body > header {
       list-style: none;
       margin-left: inherit;
     }
-    
-    #menu-button {
-      display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+  }
 
-      background-color: transparent;
-      color: inherit;
-      border: 1px solid $white;
-      border-radius: .25rem;
+  #menu-button {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 
-      &:hover {
-        background-color: transparentize($white, 0.75);
-        cursor: pointer;
-      }
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid $white;
+    border-radius: .25rem;
+
+    &:hover {
+      background-color: transparentize($white, 0.75);
+      cursor: pointer;
     }
   }
 
