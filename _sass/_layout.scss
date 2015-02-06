@@ -168,12 +168,16 @@ body > header.open {
 
 @include media-query($tablet) {
   body > header {
+    #menu-button {
+      display: none;
+    }
+
     nav {
       height: auto;
       width: 50%;
       float: right;
 
-      #menu-button, h3 {
+      h3 {
         display: none;
       }
 
