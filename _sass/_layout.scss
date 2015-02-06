@@ -85,9 +85,8 @@ body > header {
       }
     }
 
-    button {
-      -webkit-appearance: none;
-      
+    #menu-button {
+      display: block;
       position: absolute;
       top: 1rem;
       right: 1rem;
