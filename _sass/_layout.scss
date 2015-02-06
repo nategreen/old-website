@@ -85,6 +85,11 @@ body > header {
       }
     }
 
+    li {
+      list-style: none;
+      margin-left: inherit;
+    }
+    
     #menu-button {
       display: block;
       position: absolute;
@@ -96,17 +101,10 @@ body > header {
       border: 1px solid $white;
       border-radius: .25rem;
 
-      z-index: 10;
-
       &:hover {
         background-color: transparentize($white, 0.75);
         cursor: pointer;
       }
-    }
-
-    li {
-      list-style: none;
-      margin-left: inherit;
     }
   }
 
