@@ -77,12 +77,65 @@ $desktop: 120em;
   box-shadow: 0 .5rem 1rem transparentize($black, 0.65) inset;
 }
 
+// Animations
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 // Susy setup
 
 $susy: (
   columns: 3,
   gutters: 1/8
-  );
+);
 
 // Font Loader
 
@@ -100,15 +153,24 @@ html.wf-libertad-n7-loading { // keep the spinner running
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 100;
 
     opacity: 1 !important;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: calc(50vh - 20px);
+    left: calc(50vw - 20px);
+    width: 40px;
+    height: 40px;
+
+    background: transparent url('/images/spinner.svg') center center no-repeat;
     
-    background-image: url('/images/spinner.gif');
-    background-position: center;
-    background-size: 2rem;
-    background-repeat: no-repeat;
-    background-color: $background-color;
+    $speed: .5s;
+    animation: rotator $speed linear infinite;
+    -moz-animation: rotator $speed linear infinite;
+    -webkit-animation: rotator $speed linear infinite;
   }
 }
 
