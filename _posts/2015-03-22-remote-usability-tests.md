@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: "Usability II: Remote Testing with Loop11"
+title: "Usability II: Remote Testing with Loop<sup>11</sup>"
 
 ---
 
