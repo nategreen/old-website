@@ -24,7 +24,7 @@ body > * {
 body > header {
   position: fixed;
   max-height: 100vh; // prevent content from overflowing the viewport
-  overflow: scroll;
+  overflow: auto;
   top: 0;
   width: 100%;
 
