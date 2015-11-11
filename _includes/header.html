@@ -4,9 +4,10 @@
     <nav>
       <h3>Menu</h3>
       <ul>
-        {% for item in site.pages %}
-          {% if item.layout != null %}
-          <li><a href="{{ item.url }}" {% if page.url == item.url %} class="active"{% endif %}>{{ item.title }}</a></li>
+        {% assign sorted_pages = site.pages | sort: "weight" %}
+        {% for p in sorted_pages %}
+          {% if p.layout != null %}
+          <li><a href="{{ p.url }}" {% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a></li>
           {% endif %}
         {% endfor %}
         <li><a href="/Nate-Green-Resume.pdf">Résumé</a></li>

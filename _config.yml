@@ -19,6 +19,7 @@ defaults:
       path: ""
     values:
       layout: default
+      weight: 0
 
 # Collections
 collections:
