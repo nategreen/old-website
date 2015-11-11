@@ -1,0 +1,36 @@
+// Font Loader
+
+html.wf-loading,
+html.wf-libertad-n4-loading,  // When either of these fonts are still loading 
+html.wf-libertad-n7-loading { // keep the spinner running
+  body {
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 1 !important;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: calc(50vh - 20px);
+    left: calc(50vw - 20px);
+    width: 40px;
+    height: 40px;
+
+    background: transparent url('/images/spinner.svg') center center no-repeat;
+    
+    $speed: .5s;
+    animation: rotator $speed linear infinite;
+    -moz-animation: rotator $speed linear infinite;
+    -webkit-animation: rotator $speed linear infinite;
+  }
+}

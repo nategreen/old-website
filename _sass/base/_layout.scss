@@ -175,7 +175,7 @@ body > header.open {
 
     nav {
       height: auto;
-      width: 50%;
+      width: auto;
       float: right;
 
       h3 {
@@ -236,17 +236,17 @@ body > footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 
-  @include container;
-
   section.about {
-    @include span(3 of 3);
+    width: 100%;
 
     h1 {
       margin-top: 0;
     }
 
     img {
-      @include span(1 of 3);
+      width: 33%;
+      float: left;
+      margin-right: 1em;
 
       border: 1 / 2 * 1rem solid $light-grey;
       @include medium-shadow;
@@ -283,4 +283,36 @@ body > footer {
       content: (" | ");
     }
   }
+}
+
+/**
+ * Cards
+ */
+
+.card {
+  background: $card-color;
+  padding: 1.5rem;
+  // margin-left: 0;
+  // margin-right: 0;
+  border-bottom: 1px solid shade($card-color, 10%);
+  border-left: 1px solid shade($card-color, 5%);
+  border-right: 1px solid shade($card-color, 5%);
+  border-top: 1px solid tint($card-color, 75%);
+  border-radius: .125rem;
+  
+  list-style-type: none;
+  
+  * + & {
+    margin-top: 2rem;
+  }
+  
+  &:nth-of-type(N + 2) {
+    margin-top: 1rem;
+  }
+    
+  @include medium-shadow;
+}
+
+li.card {
+    margin-left: 0;
 }
