@@ -12,3 +12,22 @@ github_username:  nategreen
 markdown: kramdown
 
 permalink: pretty
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Collections
+collections:
+  case-studies:
+    output: true
+    permalink: /case-studies/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: case-studies
+        values:
+          layout: case-study
