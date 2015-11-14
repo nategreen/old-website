@@ -5,9 +5,6 @@
 		[
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -90,12 +87,30 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/nategreen/dev/nategreen.github.io"
-	],
 	"file_history":
 	[
+		"/Users/nategreen/dev/nategreen.github.io/index.html",
+		"/Users/nategreen/dev/nategreen.github.io/_config.yml",
+		"/Users/nategreen/dev/nategreen.github.io/css/base/_reset.scss",
+		"/Users/nategreen/dev/nategreen.github.io/_sass/base/_layout.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/base/_typography.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/main.scss",
+		"/Users/nategreen/dev/nategreen.github.io/_sass/_base.scss",
+		"/Users/nategreen/dev/nategreen.github.io/_sass/_pages.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/base/_layout.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/_pages.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/_base.scss",
+		"/Users/nategreen/dev/nategreen.github.io/_sass/_layout.scss",
+		"/Users/nategreen/dev/nategreen.github.io/case-studies/index.html",
+		"/Users/nategreen/dev/nategreen.github.io/_includes/header.html",
+		"/Users/nategreen/dev/nategreen.github.io/blog/index.html",
+		"/Users/nategreen/dev/nategreen.github.io/css/base.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/_font-loader.scss",
+		"/Users/nategreen/dev/nategreen.github.io/css/_mixins.scss",
+		"/Users/nategreen/dev/nategreen.github.io/nategreen.github.io.sublime-project",
+		"/Users/nategreen/dev/nategreen.github.io/css/_variables.scss",
+		"/Users/nategreen/dev/nategreen.github.io/_case-studies/ksu-uxd-site.md",
+		"/Users/nategreen/dev/nategreen.github.io/_layouts/case-study.html",
 		"/Users/nategreen/dev/nategreen.github.io/_site/css/fonts.css",
 		"/Users/nategreen/dev/nategreen.github.io/_includes/case-study-card.html",
 		"/Users/nategreen/dev/nategreen.github.io/_includes/educational-disclaimer.html",
@@ -112,7 +127,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -126,6 +141,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@include span",
+			"@include container",
+			"item",
 			"case-",
 			"li",
 			"http://www.kent.edu",
@@ -172,14 +190,6 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
 		"height": 39.0
@@ -220,7 +230,6 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "nategreen.github.io.sublime-project",
 	"replace":
 	{
 		"height": 74.0
@@ -253,7 +262,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
