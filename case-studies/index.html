@@ -2,3 +2,7 @@
 layout: page
 title: Case Studies
 ---
+
+{% for study in site.case-studies %}
+  {% include case-study-card.html %}
+{% endfor %}
