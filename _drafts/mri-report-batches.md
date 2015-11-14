@@ -37,8 +37,12 @@ As I was learning about the current system, I wanted to make sure that the new f
 - Before release, quick-and-dirty internal usability testing with other departments revealed that our tabbed interface was being used more like a wizard, and users were missing important functionality
 - Changed the layout and flow to accomodate the natural mental model
 
+
+
 ## Results
 
 - Stakeholders pleased with the results, usability
 - Users at user conference were very excited about the efficiency increases
 - Ended up with a bucket of suggestions for improvement and extension that should further increase the utility and usability
+
+
