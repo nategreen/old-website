@@ -22,13 +22,13 @@ defaults:
       weight: 0
 
 # Collections
-collections:
-  case-studies:
-    output: true
-    permalink: /case-studies/:path/
-    defaults:
-      - scope:
-          path: ""
-          type: case-studies
-        values:
-          layout: case-study
+# collections:
+#   case-studies:
+#     output: true
+#     permalink: /case-studies/:path/
+#     defaults:
+#       - scope:
+#           path: ""
+#           type: case-studies
+#         values:
+#           layout: case-study
