@@ -1,6 +1,7 @@
 ---
 
 title: "Followup: Kent State's User Experience Design Program"
+layout: post
 
 ---
 
