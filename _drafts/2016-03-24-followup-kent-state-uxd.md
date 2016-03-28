@@ -44,3 +44,6 @@ On the other hand, though, there have been a few times where the workload didn't
 
 To date, all my course instructors have been adjunct faculty---people who are actively working in user experience positions and who seem to have a genuine passion for the work they're doing. (That passion by itself is pretty encouraging.) On assignments, the feedback we get is usually pragmatic and supported by the instructor's experience.
 
+## It's not for everyone, but I would definitely say it's for me
+
+Like I've said in each email response I gave, this Master's program has been really valuable to me. If you're deciding right now whether or not to enroll, I highly recommend reaching out to the staff at KSU UXD to ask whatever questions you have and take a closer look at the program.
