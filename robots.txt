@@ -1,0 +1,2 @@
+User-agent: * 
+Disallow: /Nate-Green-work-samples.pdf
