@@ -4,7 +4,7 @@
     <nav>
       <h3>Menu</h3>
       <ul>
-        {% assign sorted_pages = site.pages | sort: "weight" %}
+        {% assign sorted_pages = site.html_pages | sort: "weight" %}
         {% for p in sorted_pages %}
           {% if p.layout != null %}
           <li><a href="{{ p.url }}" {% if page.url == p.url %} class="active"{% endif %}>{{ p.title }}</a></li>
